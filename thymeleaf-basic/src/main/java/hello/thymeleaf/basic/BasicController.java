@@ -132,6 +132,7 @@ public class BasicController {
         list.add(new User("UserB",20));
         list.add(new User("UserC",30));
         model.addAttribute("users",list);
+        ThreadLocal<Object> objectThreadLocal = new ThreadLocal<>();
     }
 
     @Data
