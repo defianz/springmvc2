@@ -33,7 +33,7 @@ public class ErrorPageController {
         printErrorInfo(request);
         return "error-page/500";
     }
-n
+
     private void printErrorInfo(HttpServletRequest request) {
         log.info("ERROR_EXCEPTION: {}", request.getAttribute(ERROR_EXCEPTION));
         log.info("ERROR_EXCEPTION_TYPE: {}", request.getAttribute(ERROR_EXCEPTION_TYPE));
